@@ -1,12 +1,12 @@
 <template>
-  <div class="wrapper">hello</div>
+  <div class="icons-wrapper">
+    <div class="icon"></div>
+  </div>
 </template>
 
 <script>
 export default {
-  components:{},
-  props:{},
-  data(){
+  data () {
     return {
     }
   },
@@ -18,5 +18,15 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.wrapper{}
+.icons-wrapper{
+  overflow: hidden;
+  height: 0;
+  padding-bottom: 50%;
+  background: yellow;
+  .icon{
+    float: left;
+    width: 25%;
+    padding-bottom: 25%;
+  }
+}
 </style>
