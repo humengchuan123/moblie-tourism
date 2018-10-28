@@ -1,5 +1,6 @@
 <template>
   <div>
+     <!-- <transition name="fade"> -->
       <div class="title">热销推荐</div>
       <ul>
       <router-link tag="li" :to="'/detail/' + item.id" class="item border-bottom" 
@@ -12,6 +13,7 @@
           </div>
         </router-link>
       </ul>
+      <!-- </transition> -->
   </div>
 </template>
 
@@ -67,5 +69,5 @@ export default {
       }
     }
   }
-
+ 
 </style>
