@@ -2,11 +2,12 @@
   <div>
       <detail-banner :sightName="sightName" :bannerImg="bannerImg" 
       :gallaryImgs="gallaryImgs"
-      ></detail-banner>
+      ></detail-banner> 
       <detail-header></detail-header>
-      <div class="content">
+       <div class="content">
       <detail-list :list="list"></detail-list>
       </div>
+      
   </div>
 </template>
 
@@ -59,6 +60,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .content{
-  height: 20rem;
+  // height: 20rem;
 }
 </style>

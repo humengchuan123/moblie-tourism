@@ -1,14 +1,15 @@
 <template>
-  <div class="wrapper">
+  <div>
       <div class="item" v-for="(item,index) of list" :key="index">
         <div class="item-title border-bottom">
           <span class="item-title-icon"></span>
           {{item.title}}
-        </div>
+        </div> 
         <div class="item-child" v-if="item.children">
           <detail-list :list="item.children"></detail-list>
         </div>
       </div>
+      
   </div>
 </template>
 
@@ -30,13 +31,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.wrapper{
   // height: 10rem;
-  .item-title{
-    line-height: .8rem;
-    font-size: .32rem;
-    padding: 0 .2rem;
-    .item-title-icon{
+   .item-title-icon{
       position: relative;
       left: .06rem;
       top: .06rem;
@@ -47,10 +43,13 @@ export default {
       margin-right: .1rem;
       background-size: .4rem 3rem;
     }
+  .item-title{
+    line-height: .8rem;
+    font-size: .32rem;
+    padding: 0 .2rem;
+   
   }
   .item-child{
     padding: 0 .2rem;
   }
-
-}
 </style>
